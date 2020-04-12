@@ -1,6 +1,6 @@
 import * as Phaser from 'phaser'
 
-function preload (this: any) {
+function preload (this: Phaser.Scene) {
   this.load.setBaseURL('http://labs.phaser.io')
 
   this.load.image('sky', 'assets/skies/space3.png')
@@ -8,7 +8,7 @@ function preload (this: any) {
   this.load.image('red', 'assets/particles/red.png')
 }
 
-function create (this: any) {
+function create (this: Phaser.Scene) {
   this.add.image(400, 300, 'sky')
 
   const particles = this.add.particles('red')
