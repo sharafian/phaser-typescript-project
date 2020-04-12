@@ -5,9 +5,11 @@
   "author": "sharafian <ben@sharafian.me>",
   "license": "Apache-2.0",
   "scripts": {
-    "build": "webpack"
+    "build": "webpack",
+    "start": "http-server"
   },
   "devDependencies": {
+    "http-server": "^0.12.1",
     "source-map-loader": "^0.2.4",
     "ts-loader": "^6.2.2",
     "typescript": "^3.8.3",
