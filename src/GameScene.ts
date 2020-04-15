@@ -11,6 +11,10 @@ export default class GameScene extends Phaser.Scene {
 
   create (this: Phaser.Scene) {
     this.add.image(400, 300, 'sky')
-    this.add.text(0, 150, 'Hello Typescript', {color: 'red', fontSize: '30px', align: 'center'});
+    this.add.text(0, 150, 'Hello Typescript', {
+      color: 'red',
+      fontSize: '30px',
+      align: 'center'
+    })
   }
 }
